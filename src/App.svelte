@@ -1,30 +1,36 @@
 <script>
-	export let name;
+	import Headbar from "./Headbar.svelte";
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Headbar></Headbar>
+	<span class="main-content">
+		Content will go here
+	</span>
+
 </main>
 
 <style>
+
+
+
 	main {
+		width: 100vw;
+		height: 100vh;
+
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 20% minmax(1000px,60%) 20%;
+		grid-template-rows: 100% auto;
+	}
+
+	.main-content {
+		grid-column: 2/2;
+		grid-row: 2/2;
+
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+	}	
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>

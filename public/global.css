@@ -24,10 +24,22 @@ html {
 	font-weight: 300;
 	background-color: var(--background-color);
 	color: var(--text-color);
+
+	line-height: 1.5;
 }
 
 body {
 	margin: 0px;
+}
+
+h1 {
+	font-size: var(--headline-font-size);
+	font-weight: 200;
+}
+
+h2 {
+	font-size: var(--subheadline-font-size);
+	font-weight: 200;
 }
 
 

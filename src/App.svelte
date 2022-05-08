@@ -1,12 +1,16 @@
 <script>
 	import Headbar from "./Headbar.svelte";
+	import Bar from "./Bar.svelte";
+	import Host from "./Host.svelte";
+	import About from "./About.svelte";
 </script>
 
 <main>
 	<Headbar></Headbar>
-	<span class="main-content">
-		Content will go here
-	</span>
+	
+	<Bar></Bar>
+	<Host></Host>
+	<About></About>
 
 </main>
 
@@ -21,16 +25,12 @@
 		display: grid;
 		justify-content: center;
 		justify-items: center;
-		grid-template-columns: 20% minmax(1000px,60%) 20%;
-		grid-template-rows: 100% auto;
+		grid-template-columns: 20% minmax(500px,30%) minmax(500px, 30%) 20%;
+		grid-template-rows: 100% repeat(auto, 5);
 	}
 
-	.main-content {
-		grid-column: 2/2;
-		grid-row: 2/2;
-
-		text-align: center;
-	}	
-
+	main::after{
+		height: 2000px;
+	}
 
 </style>

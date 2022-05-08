@@ -1,8 +1,8 @@
 <script>
     let menues = [
-        { id: 0, title: "Home", link: "" },
-        { id: 1, title: "Contact", link: "" },
-        { id: 2, title: "Impressum", link: "" },
+        { id: 0, title: "Das Lokal", link: "#bar" },
+        { id: 1, title: "Gastgeber", link: "#host" },
+        { id: 2, title: "Impressum", link: "#about" },
     ];
 
     function onSelectTab(id) {}
@@ -11,7 +11,7 @@
 <span class="head">
     <div class="headline">
         <div class="logo">
-            <div>
+            <div style="font-size: 56px;">
                 LOKALER GOLLER
             </div>
             <div class="sublogo">
@@ -40,7 +40,7 @@
 <style>
 
     .head {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 1/1;
 
         height: 100vh;
@@ -54,10 +54,12 @@
         flex-direction: row;
         justify-content: center;
         gap: 50px;
+
+        position: sticky;
     }
 
     .headline {
-        font-size: 56px;
+
         font-weight: 100;
 
         background-image: url(https://lh5.googleusercontent.com/p/AF1QipP0x7Db83nsP6wJK-MEhslEfff1QgcICu5FHGBR=w203-h270-k-no);
@@ -67,14 +69,18 @@
 
         padding: 0;
         height: 90vh;
+
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .logo{
         text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+
 
         font-weight: 300;
     }

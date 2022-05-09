@@ -18,7 +18,20 @@
                 Ihre freundliche und professionelle Andachtsstätte in der Nachbarschaft.
             </div>
         </div>
-        <div class="socials">
+
+    </div>
+
+
+    <div class="menubar">
+        <div class="menu">
+        {#each menues as menu (menu.id)}
+            <a href={menu.link} class="element" on:click={(evt) => onSelectTab(menu.id)}>
+                {menu.title}
+            </a>
+        {/each}
+
+        </div>
+        <div class="menu">
             <a href="/">
                 <img src="./assets/instagram.png" alt="InstagramIcon" width="25px" height="25px"/>
             </a>
@@ -28,13 +41,7 @@
         </div>
     </div>
 
-    <div class="menu">
-        {#each menues as menu (menu.id)}
-            <a href={menu.link} class="element" on:click={(evt) => onSelectTab(menu.id)}>
-                {menu.title}
-            </a>
-        {/each}
-    </div>
+
 </span>
 
 <style>
@@ -47,15 +54,24 @@
         width: 100vw;
     }
 
-    .menu {
+    .menubar {
+        background-color: var(--background-color);
+
+        position: sticky;
+        top: 0;
         height: 10vh;
+    }
+
+    .menu {
+
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: center;
         gap: 50px;
+        padding: 5px;
 
-        position: sticky;
+
     }
 
     .headline {
@@ -90,14 +106,6 @@
         font-size: var(--subheadline-font-size);
     }
 
-    .socials {
-        position: absolute;
-        bottom: 10%;
-        right: 10%;
-
-        display: flex;
-        flex-flow: row-reverse;
-    }
 
     .element {
         font-size: var(--headline-font-size);

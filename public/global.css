@@ -15,10 +15,6 @@
 html {
 	scroll-behavior: smooth;
 
-	/* Hide the overflow of the page because of a bug where the page randomly showed a vertical
-		Scrollbar every other reload...
-	*/
-	overflow-x: hidden;
 
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;

@@ -6,31 +6,23 @@
 </script>
 
 <main>
-	<Headbar></Headbar>
-	
-	<Bar></Bar>
-	<Host></Host>
-	<About></About>
+	<Headbar />
 
+	<div class="content-grid">
+		<Bar />
+		<Host />
+		<About />
+	</div>
 </main>
 
 <style>
 
 
-
-	main {
-		width: 100vw;
-		height: 100vh;
-
+	.content-grid {
 		display: grid;
 		justify-content: center;
 		justify-items: center;
-		grid-template-columns: 20% minmax(500px,30%) minmax(500px, 30%) 20%;
-		grid-template-rows: 100% repeat(auto, 5);
+		grid-template-columns: 20% minmax(300px, 30%) minmax(300px, 30%) 20%;
+		grid-template-rows: repeat(auto, 5);
 	}
-
-	main::after{
-		height: 2000px;
-	}
-
 </style>

@@ -4,7 +4,7 @@
 
 <div class="content" id="bar">
     <h1>
-       Das Lokal 
+       Das Lokal
     </h1>
     <p>
         Der Lokale Goller lädt regelmäßig zum entspannen in ruhiger und relaxter Atmosphäre ein.
@@ -25,16 +25,29 @@
 <style>
     .content {
         grid-column: 2/2;
-        grid-row: 2/2;
+        grid-row: 1/1;
 
         padding: 20px;
     }
 
     .image {
         grid-column: 3/5;
-        grid-row: 2/2;
+        grid-row: 1/1;
         height: 100%;
         width: 100%;
         background-image: linear-gradient(red, blue);
+        min-height: 500px;
+    }
+
+    @media only screen and (max-width: 800px){
+        .content {
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+
+        .image {
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
     }
 </style>

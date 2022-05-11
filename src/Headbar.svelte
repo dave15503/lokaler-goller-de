@@ -11,7 +11,7 @@
 <span class="head">
     <div class="headline">
         <div class="logo">
-            <div style="font-size: 56px;">
+            <div class="title">
                 LOKALER GOLLER
             </div>
             <div class="sublogo">
@@ -23,7 +23,7 @@
 
 
     <div class="menubar">
-        <div class="menu">
+        <div class="menu mainmenu">
         {#each menues as menu (menu.id)}
             <a href={menu.link} class="element" on:click={(evt) => onSelectTab(menu.id)}>
                 {menu.title}
@@ -71,7 +71,10 @@
         gap: 50px;
         padding: 5px;
 
+    }
 
+    .title {
+        font-size: var(--title-font-size);
     }
 
     .headline {
@@ -109,5 +112,22 @@
 
     .element {
         font-size: var(--headline-font-size);
+    }
+
+    @media only screen and (max-width: 800px){
+
+        .mainmenu {
+            flex-flow: column;
+            gap: 5px;
+        }
+
+        .menubar {
+            height: 25vh;
+        }
+
+        .headline {
+            height: 75vh;
+        }
+
     }
 </style>

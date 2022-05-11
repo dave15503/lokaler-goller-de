@@ -36,5 +36,18 @@
         height: 100%;
         width: 100%;
         background-image: linear-gradient(green, violet);
+        min-height: 500px;
+    }
+
+    @media only screen and (max-width: 800px){
+        .content {
+            grid-column: 1/1;
+            grid-row: 4/4;
+        }
+
+        .image {
+            grid-column: 1/1;
+            grid-row: 3/3;
+        }
     }
 </style>

@@ -2,12 +2,23 @@
 
 /*Major default settings for root elements of the page*/
 :root {
+	--title-font-size: 56px;
 	--headline-font-size: 32px;
 	--subheadline-font-size: 24px;
 	--text-font-size: 16px;
 
 	--background-color: #000812;
 	--text-color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+
+	:root {
+		--title-font-size: 46px;
+		--headline-font-size: 30px;
+		--subheadline-font-size: 24px;
+		--text-font-size: 16px;
+	}
 
 }
 
@@ -20,7 +31,7 @@ html {
 	font-weight: 300;
 	background-color: var(--background-color);
 	color: var(--text-color);
-
+	width: auto;
 	line-height: 1.5;
 }
 

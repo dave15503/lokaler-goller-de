@@ -27,10 +27,4 @@
         text-align: center;
     }
 
-    @media only screen and (max-width: 800px){
-        .content {
-            grid-column: 1/1;
-            grid-row: 5/5;
-        }
-    }
 </style>

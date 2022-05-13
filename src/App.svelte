@@ -101,6 +101,8 @@
 			Requires no change in the childs columns as they just ignore them when the parent is a flex*/
 			display: flex;
 			flex-direction: column;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 </style>

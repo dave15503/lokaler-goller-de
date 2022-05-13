@@ -50,8 +50,8 @@
         grid-column: 1/5;
         grid-row: 1/1;
 
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
     }
 
     .menubar {
@@ -59,7 +59,7 @@
 
         position: sticky;
         top: 0;
-        height: 10vh;
+        height: 10%;
     }
 
     .menu {
@@ -94,6 +94,8 @@
         justify-items: center;
         justify-content: center;
         flex-direction: column;
+
+        /**Todo change to flex layout*/
     }
 
     .logo{

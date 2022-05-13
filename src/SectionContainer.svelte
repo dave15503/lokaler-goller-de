@@ -15,7 +15,7 @@
 <div class={"content " + orientation} id={tag} style={"grid-row: " + row + "/" + row + ";"}>
     <slot></slot>
 </div>
-<div class={"image " + orientationOpposite} style={"grid-row: " + row + "/" + row + ";"}>
+<div class={"image " + orientationOpposite} style={"grid-row: " + row + "/" + row + "; background-image: url(" + imagePath + "),  linear-gradient(green, violet)"}>
     **Placeholder**
 </div>
 
@@ -28,7 +28,6 @@
     .image {
         height: 100%;
         width: 100%;
-        background-image: url({imagePath}), linear-gradient(green, violet);
         min-height: 500px;
     }
 

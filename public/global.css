@@ -16,10 +16,12 @@
 @media only screen and (max-width: 800px) {
 
 	:root {
-		--title-font-size: 46px;
-		--headline-font-size: 26px;
-		--subheadline-font-size: 20px;
-		--text-font-size: 16px;
+		
+		--title-font-size: 8vh;
+		--headline-font-size: 4vh;
+		--subheadline-font-size: 3vh;
+		
+		
 	}
 
 }
@@ -53,7 +55,7 @@ h2 {
 
 
 /* Restyling the disgusting default links with some stylish animation I stole on the Internet */
-a {
+a, .link {
 	color: var(--text-color);
 	text-decoration: none;
 	overflow: hidden;
@@ -62,7 +64,7 @@ a {
 	position: relative;
 }
 
-a::after {
+a::after, .link::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -77,12 +79,12 @@ a::after {
 }
 
 a:hover::after,
-a:focus::after {
+a:focus::after, .link:hover::after, .link:focus::after {
 	transform: translate3d(0, 0, 0);
 }
 
 
-a:hover {
+a:hover .link:hover {
 	text-decoration: none;
 }
 

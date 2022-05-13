@@ -12,12 +12,13 @@
 
 </script>
 
-<div class={"content " + orientation} id={tag} style={"grid-row: " + row + "/" + row + ";"}>
-    <slot></slot>
-</div>
 <div class={"image " + orientationOpposite} style={"grid-row: " + row + "/" + row + "; background-image: url(" + imagePath + "),  linear-gradient(green, violet)"}>
     **Placeholder**
 </div>
+<div class={"content " + orientation} id={tag} style={"grid-row: " + row + "/" + row + ";"}>
+    <slot></slot>
+</div>
+
 
 <style>
 

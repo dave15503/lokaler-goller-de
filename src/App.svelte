@@ -3,10 +3,17 @@
 	import About from "./About.svelte";
 
 	import SectionContainer from "./SectionContainer.svelte";
+
+	
+    let menues = [
+        { id: 0, title: "Das Lokal", link: "#bar" },
+        { id: 1, title: "Gastgeber", link: "#host" },
+        { id: 2, title: "Impressum", link: "#about" },
+    ];
 </script>
 
 <main>
-	<Headbar />
+	<Headbar {menues} />
 
 	<div class="content-grid">
 		<SectionContainer orientation="right" tag="bar" imagePath="" row="1">

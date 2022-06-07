@@ -100,6 +100,7 @@
 		justify-items: center;
 		grid-template-columns: 20% minmax(200px, 30%) minmax(200px, 30%) 20%;
 		grid-template-rows: repeat(5, auto);
+	
 	}
 
 	@media only screen and (max-width: 800px) {

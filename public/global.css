@@ -17,9 +17,9 @@
 
 	:root {
 		
-		--title-font-size: 8vh;
-		--headline-font-size: 4vh;
-		--subheadline-font-size: 3vh;
+		--title-font-size: 6vh;
+		--headline-font-size: 3vh;
+		--subheadline-font-size: 2vh;
 		
 		
 	}
@@ -35,7 +35,6 @@ html {
 	font-weight: 300;
 	background-color: var(--background-color);
 	color: var(--text-color);
-	width: auto;
 	line-height: 1.5;
 }
 
@@ -46,11 +45,13 @@ body {
 h1 {
 	font-size: var(--headline-font-size);
 	font-weight: 200;
+	margin: 0px;
 }
 
 h2 {
 	font-size: var(--subheadline-font-size);
 	font-weight: 200;
+	margin: 0px;
 }
 
 

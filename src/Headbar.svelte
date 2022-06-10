@@ -107,25 +107,46 @@
         background-size: contain;
         background-position: center center;
         position: relative;
-
+        padding-right: 20px;
+        padding-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+
+
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(75px); 
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
 
     .logo {
         text-align: center;
         font-weight: 100;
+
+
     }
 
     .socials {
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
+        animation: 0.8s ease-out 0s 1 slideUp;
     }
 
     .logo h1 {
         font-size: var(--title-font-size);
+        animation: 0.4s ease-out 0s 1 slideUp;
+    }
+
+    .logo h2 {
+        animation: 0.6s ease-out 0s 1 slideUp;
     }
 
     .hamburger-menu {

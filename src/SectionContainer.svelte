@@ -33,11 +33,11 @@
     }
 
     .left.image {
-        grid-column: 1/3;
+        grid-column: 2/3;
     }
 
     .right.image{
-        grid-column: 3/5;
+        grid-column: 3/4;
     }
 
     .right.content {

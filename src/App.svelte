@@ -1,7 +1,7 @@
 <script>
 	import Headbar from "./Headbar.svelte";
 	import About from "./About.svelte";
-
+	import ImageScroller from "./ImageScroller.svelte";
 	import SectionContainer from "./SectionContainer.svelte";
 
 	
@@ -54,7 +54,9 @@
 			</p>
 		</SectionContainer>
 
-		<SectionContainer orientation="left" tag="host" imagePath="" row="2">
+		<ImageScroller row="2"></ImageScroller>
+
+		<SectionContainer orientation="left" tag="host" imagePath="" row="3">
 			<h1>Ihre Gastgeber</h1>
 			<h2>Gico Noller</h2>
 			<p>

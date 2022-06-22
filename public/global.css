@@ -8,7 +8,9 @@
 	--text-font-size: 16px;
 
 	--background-color: #000812;
+	--secondary-background-color: #334047;
 	--text-color: #fff;
+	--secondary-text-color: #cdcdd0;
 
 	box-sizing: border-box;
 }

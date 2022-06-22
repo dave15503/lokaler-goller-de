@@ -10,6 +10,12 @@
         { id: 1, title: "Gastgeber", link: "#host" },
         { id: 2, title: "Impressum", link: "#about" },
     ];
+
+	let scroller0ImgList = [
+		{ alt: "Image 0", content: "linear-gradient(red, violet)"},
+		{ alt: "Image 1", content: "linear-gradient(blue, red)"},
+		{ alt: "Image 2", content: "linear-gradient(green, yellow)"}
+	];
 </script>
 
 <main>
@@ -54,7 +60,7 @@
 			</p>
 		</SectionContainer>
 
-		<ImageScroller row="2"></ImageScroller>
+		<ImageScroller row="2" imagesList={scroller0ImgList}></ImageScroller>
 
 		<SectionContainer orientation="left" tag="host" imagePath="" row="3">
 			<h1>Ihre Gastgeber</h1>

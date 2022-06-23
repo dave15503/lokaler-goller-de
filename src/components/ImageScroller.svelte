@@ -1,5 +1,5 @@
 <script>
-    import { fade } from 'svelte/transition';
+    import { fade} from 'svelte/transition';
     // Array of {path: '', alt: ''} objects
     // to render side by side and scroll through from time to time
     export let imagesList;
@@ -39,7 +39,7 @@
                         <span class="pb-item highlighted" ></span>
                     {:else}
                         <span class="pb-item" on:click={() => setIndex(index)}></span>
-                    {/if}            
+                    {/if}
                 {/each}
             </div>
             <div class="arr-r" on:click={goRight}>
@@ -47,9 +47,9 @@
             </div>
         </div>
         {#key currentIndex}
-            <div transition:fade class="image-view" style={ "background-image: " + imagesList[currentIndex].content + ";"}></div>
+            <div transition:fade={{duration: 500}} class="image-view" style={ "background-image: " + imagesList[currentIndex].content + ";"}></div>
         {/key}
-        
+
 
     </div>
 {:else}
@@ -100,11 +100,12 @@
     }
 
     .image-controls > * {
-        visibility: hidden;
+        opacity: 0;
+        transition: opacity 500ms;
     }
 
     .image-controls:hover > * {
-        visibility: visible;
+        opacity: 1;
     }
 
     .image-progress-bar {
@@ -115,7 +116,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: calc(var(--subheadline-font-size)/2);
+        align-items: center;
+        gap: calc(var(--subheadline-font-size)/3);
+        overflow: hidden;
     }
 
     .pb-item {
@@ -129,12 +132,27 @@
 
     .pb-item.highlighted{
         background-color: var(--secondary-text-color);
+        width: calc(var(--text-font-size)*1.2);
+        height: calc(var(--text-font-size)*1.2);
     }
 
     .arr-l , .arr-r {
         cursor: pointer;
         font-size: var(--title-font-size);
         padding: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .arr-l {
+        border-top-right-radius: 1000px;
+        border-bottom-right-radius: 1000px;
+    }
+
+    .arr-r {
+        border-top-left-radius: 1000px;
+        border-bottom-left-radius: 1000px;
     }
 
 </style>

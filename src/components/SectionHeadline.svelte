@@ -8,7 +8,9 @@
 
 <div class="container" id={tag} style={"grid-row: "+ row + "/" + row}>
     <h1>{headline}</h1>
-    <h2>{subheadline}</h2>
+    {#if subheadline != null}
+        <h2>{subheadline}</h2>
+    {/if}
 </div>
 
 <style>

@@ -11,6 +11,7 @@
         { id: 0, title: "Das Lokal", link: "#bar" },
         { id: 1, title: "Gastgeber", link: "#host" },
         { id: 2, title: "Impressum", link: "#about" },
+		{ id: 3, title: "Fbs", link: "/fbs"}
     ];
 
 	let scroller0ImgList = [

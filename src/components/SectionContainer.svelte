@@ -9,6 +9,7 @@
     export let orientation;
     export let tag; // id for the scrolling
     export let row;
+    export let minHeight = -1;
 
     let scrolledIntoContent = false;
 
@@ -34,7 +35,9 @@
     });
 </script>
 
-<div class="{'image ' + orientationOpposite}" style="{'grid-row: ' + row + '/' + row + '; background-image: url(' + imagePath + '),  linear-gradient(green, violet)'}">**Placeholder**</div>
+<div class="{'image ' + orientationOpposite}" style={'grid-row: ' + row + '/' + row + '; background-image: url(' + imagePath + ") " + (imagePath !== "" ? ";" : (",  linear-gradient(green, violet);")) + (minHeight > 0 ? "height: " + minHeight + "px;" : "")}>
+    {imagePath == "" ? "**Placeholder**" : ""}
+</div>
 <div class="{'content ' + orientation}" id="{tag}" style="{'grid-row: ' + row + '/' + row + ';'}">
     {#key scrolledIntoContent}
         <div id="{'section-headline-' + row}" in:fly="{{ x: 0, y: -30, duration: 1000, delay: 200 }}">
@@ -57,8 +60,12 @@
     }
 
     .image {
+        display: inline-block;
         height: 100%;
         width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center, center;
     }
 
     .left.image {
@@ -75,5 +82,11 @@
 
     .left.content {
         grid-column: 2/3;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .image {
+            min-height: 400px;
+        }
     }
 </style>

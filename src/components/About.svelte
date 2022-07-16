@@ -13,6 +13,9 @@
     <p>
         Grüße gehen raus an den Steuerfahnder der das gerade liest.
     </p>
+    <p>
+        Kontakt für Feedback, Beschwerden und alle andere Anliegen: <a href="mailto: webmaster@lokaler-goller.de">webmaster@lokaler-goller.de</a>
+    </p>
 
     <h2>Cookie- und Datenschutzrichtline</h2>
     <p>

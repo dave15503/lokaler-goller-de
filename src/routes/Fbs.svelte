@@ -162,6 +162,17 @@
         text-align: center;
     }
 
+    .content-grid {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 20% minmax(200px, 30%) minmax(200px, 30%) 20%;
+		grid-template-rows: repeat(5, auto);
+        row-gap: 20px;
+        margin-top: 20px;
+
+	}
+
     @media only screen and (max-width: 800px) {
         .banner {
             background-size: contain;
@@ -177,16 +188,5 @@
 
 		}
     }
-
-    .content-grid {
-		display: grid;
-		justify-content: center;
-		justify-items: center;
-		grid-template-columns: 20% minmax(200px, 30%) minmax(200px, 30%) 20%;
-		grid-template-rows: repeat(5, auto);
-        row-gap: 20px;
-        margin-top: 20px;
-
-	}
 
 </style>

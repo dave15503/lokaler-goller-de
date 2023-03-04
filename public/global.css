@@ -8,7 +8,7 @@
 	--text-font-size: 16px;
 
 	--background-color: #000812;
-	--secondary-background-color: #334047;
+	--secondary-background-color: #0e3144;
 	--text-color: #fff;
 	--secondary-text-color: #cdcdd0;
 
@@ -27,6 +27,7 @@
 	}
 
 }
+
 
 
 html {
@@ -58,7 +59,7 @@ h2 {
 
 
 /* Restyling the disgusting default links with some stylish animation I stole on the Internet */
-a, .link {
+.link {
 	color: var(--text-color);
 	text-decoration: none;
 	overflow: hidden;
@@ -67,7 +68,7 @@ a, .link {
 	position: relative;
 }
 
-a::after, .link::after {
+.link::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -81,17 +82,16 @@ a::after, .link::after {
 	opacity: 1;
 }
 
-a:hover::after,
-a:focus::after, .link:hover::after, .link:focus::after {
+.link:hover::after, .link:focus::after {
 	transform: translate3d(0, 0, 0);
 }
 
 
-a:hover .link:hover {
+.link:hover {
 	text-decoration: none;
 }
 
-a:visited {
+.link:visited {
 	color: var(--text-color);
 }
 

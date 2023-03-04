@@ -70,7 +70,7 @@
         right: 0;
         bottom: 0;
         height: 100%;
-        z-index: -1;
+        z-index: 0
     }
 
     .image-container {
@@ -79,7 +79,8 @@
         height: 500px;
         position: relative;
         overflow: hidden;
-        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .image-controls {

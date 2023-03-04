@@ -13,7 +13,7 @@
 </script>
 
 
-<MenuBar {menuItems} title="Fenerbahçe Schnad ev. 2021"></MenuBar>
+<MenuBar {menuItems} title="Fenerbahçe Schnad est. 2019"></MenuBar>
 
 
 <div class="banner">
@@ -23,14 +23,14 @@
         Willkommen bei der Fenerbahçe Schnad
     </h1>
     <h2>
-        Traditions- Fußball und E-Sport Club aus Wolfersgrün City seit 2018
+        Traditions- Fußball und E-Sport Club aus Wolfersgrün City seit 2019
     </h2>
 </div>
 
 <div class="content-grid">
     <SectionHeadline row="1" tag="history" headline="Vereinsgeschichte"></SectionHeadline>
 
-    <SectionContainer row="2" orientation="left" imagePath="../assets/fbs/Gruppenfoto.png">
+    <SectionContainer row="2" orientation="left" imagePath="../assets/fbs/Gruppenfoto_clean.jpeg">
         <h2 slot="section-headline">
             Die Fenerbahçe Schnad
         </h2>
@@ -138,9 +138,9 @@
 <style>
     .banner {
         width: 100%;
-        height: 70vh;
+        height: 80vh;
 
-        background-image: url(../assets/fbs/Fenerbahce_Schnad_Esports.png);
+        background-image: url(../assets/fbs/Fenerbahce_Schnad_Sports.png);
         background-repeat: no-repeat;
         background-size: 50vh;
         background-position: center center;
@@ -148,6 +148,7 @@
 
     .logo {
         text-align: center;
+        height: calc(100vh - 78vh);
     }
     .logo h1 {
         font-size: var(--title-font-size);

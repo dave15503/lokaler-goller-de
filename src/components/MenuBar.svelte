@@ -23,8 +23,8 @@
 
  <div class="top-nav" id="menu">
         <div class="nav">
-            <h1 class="top-nav-wrap">
-                <a href="#start">{title}</a>
+            <h1 class="top-nav-wrap" >
+                <a href="#start" class="link">{title}</a>
             </h1>
             <span class="top-nav-main nav">
                 {#each menuItems as menu (menu.id)}
@@ -55,7 +55,7 @@
 </div>
 
 <style>
-  .nav {
+    .nav {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -77,7 +77,7 @@
     .top-nav {
         position: fixed;
         z-index: 10;
-        background-color: var(--background-color);
+        background-color: var(--secondary-background-color);
         width: 100%;
     }
 

@@ -25,7 +25,7 @@
 	<Headbar {menuItems} />
 
 	<div class="content-grid">
-		<SectionContainer orientation="right" tag="bar" imagePath="" row="1">
+		<SectionContainer orientation="right" tag="bar" imagePath="/assets/lg_2.png" row="1">
 			<h1 slot="section-headline" >Das Lokal</h1>
 			<section slot="section-content" >
 				<p>

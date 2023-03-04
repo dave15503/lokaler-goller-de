@@ -16,13 +16,13 @@
             <h2>Ihre freundliche und professionelle Andachtsstätte in der Nachbarschaft.</h2>
 
             <div class="nav socials">
-                <a class="link" href="/">
+                <a class="link" target="_blank" href="https://instagram.com/lokaler.goller?igshid=ZDdkNTZiNTM=">
                     <img src="./assets/instagram.png" alt="InstagramIcon" width="25px" height="25px" />
                 </a>
-                <a class="link" href="https://goo.gl/maps/oKvgYZV2cxYM84RW7">
+                <a class="link" target="_blank" href="https://goo.gl/maps/oKvgYZV2cxYM84RW7">
                     <img src="./assets/googlemaps.png" alt="GoogleMapsIcon" width="25px" height="25px" />
                 </a>
-                <a class="link" href="https://github.com/dave15503/lokaler-goller-de">
+                <a class="link" target="_blank" href="https://github.com/dave15503/lokaler-goller-de">
                     <img src="./assets/GitHubMark.png" alt="GithubImage" width="25px" height="25px"/>
                 </a>
             </div>

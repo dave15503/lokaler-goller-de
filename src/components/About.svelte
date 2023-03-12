@@ -23,6 +23,17 @@
         ist die quantitative bemessung des Verkehrs und der Aufrufzahlen auf der Seite die vom Host und nicht dem Betreiber erhoben wird.
     </p>
 
+    <h2>
+        Lizenz und Urheberrecht:
+    </h2>
+    <p>
+
+    </p>
+    <p class="copyright">
+        
+        GITHUB®, the GITHUB® logo design, the INVERTOCAT logo design, OCTOCAT®, and the OCTOCAT® logo design are trademarks of GitHub, Inc., registered in the United States and other countries.
+    </p>
+
     <h2>Vollständigkeit</h2>
     <p>
         Diese Website ist in der Entwicklung, wird also noch einige Lücken aufweisen und nicht auf jeder Plattform reibungsfrei funktionieren.
@@ -37,6 +48,10 @@
         grid-row: 5/5;
 
         text-align: center;
+    }
+
+    .copyright{
+        font-size: var(--minor-font-size);
     }
 
 </style>

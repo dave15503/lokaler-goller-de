@@ -45,9 +45,9 @@
     .banner {
         height: 100%;
 
-        background-image: url("../assets/gmapsImage.jpg");
-        background-repeat: repeat-x;
-        background-size: contain;
+        background-image: url("../assets/landingpage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center center;
         position: relative;
         padding-right: 20px;
@@ -55,6 +55,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        color: white;
 
 
 
@@ -71,7 +73,7 @@
 
     .logo {
         text-align: center;
-        font-weight: 100;
+        font-weight: 300;
 
 
     }
@@ -86,6 +88,7 @@
     .logo h1 {
         font-size: var(--title-font-size);
         animation: 0.4s ease-out 0s 1 slideUp;
+        font-weight: 300;
     }
 
     .logo h2 {

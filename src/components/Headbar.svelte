@@ -17,13 +17,13 @@
 
             <div class="nav socials">
                 <a class="link" target="_blank" href="https://instagram.com/lokaler.goller?igshid=ZDdkNTZiNTM=">
-                    <img src="./assets/instagram.png" alt="InstagramIcon" width="25px" height="25px" />
+                    <img src="./assets/icons/instagram_icon.png" alt="InstagramIcon" width="25px" height="25px" />
                 </a>
                 <a class="link" target="_blank" href="https://goo.gl/maps/oKvgYZV2cxYM84RW7">
-                    <img src="./assets/googlemaps.png" alt="GoogleMapsIcon" width="25px" height="25px" />
+                    <img src="./assets/icons/googlemaps_icon.png" alt="GoogleMapsIcon" width="25px" height="25px" />
                 </a>
                 <a class="link" target="_blank" href="https://github.com/dave15503/lokaler-goller-de">
-                    <img src="./assets/GitHubMark.png" alt="GithubImage" width="25px" height="25px"/>
+                    <img src="./assets/icons/github_icon.png" alt="GithubImage" width="25px" height="25px"/>
                 </a>
             </div>
         </div>
@@ -75,7 +75,9 @@
         text-align: center;
         font-weight: 300;
 
-
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 5px;
     }
 
     .socials {

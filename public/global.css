@@ -5,6 +5,7 @@
 	--title-font-size: 56px;
 	--headline-font-size: 32px;
 	--subheadline-font-size: 24px;
+	--minorheadline-font-size: 20px;
 	--text-font-size: 16px;
 	--minor-font-size: 12px;
 
@@ -23,7 +24,7 @@
 		--title-font-size: 5vh;
 		--headline-font-size: 3vh;
 		--subheadline-font-size: 2.5vh;
-
+		--minorheadline-font-size: 2vh;
 
 	}
 
@@ -54,6 +55,12 @@ h1 {
 
 h2 {
 	font-size: var(--subheadline-font-size);
+	font-weight: 200;
+	margin: 0px;
+}
+ 
+h3 {
+	font-size: var(--minorheadline-font-size);
 	font-weight: 200;
 	margin: 0px;
 }

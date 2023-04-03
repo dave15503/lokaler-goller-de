@@ -81,8 +81,11 @@
 			</section>
 		</SectionContainer>
 
-		<SectionContainer tag="activities">
+		<SectionContainer tag="activities" orientation="right" row="4" imagePath="">
 			<div slot="section-headline"></div>
+			<div slot="section-content">
+				ToDo
+			</div>
 		</SectionContainer>
 
 		<About></About>

@@ -67,13 +67,18 @@ h3 {
 
 
 /* Restyling the disgusting default links with some stylish animation I stole on the Internet */
-.link {
+.link, a {
 	color: var(--text-color);
 	text-decoration: none;
 	overflow: hidden;
 
 	display: block;
 	position: relative;
+}
+
+a {
+	text-decoration: underline;
+	color: var(--secondary-text-color);
 }
 
 .link::after {

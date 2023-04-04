@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="about">
+<div id="about">
     
 <ColumnContainer row="4">
     <section>
@@ -42,7 +42,7 @@
         <h3>Lizenz und Urheberrecht:</h3>
         <p>
             Diese Website wird bereitgestellt als Open Source Software,
-            der Quellcode ist für jedermann einsehbar im zugehörigen <a href="https://github.com/dave15503/lokaler-goller-de">Github-Repository</a>.
+            der Quellcode ist für jedermann einsehbar im zugehörigen <a href="https://github.com/dave15503/lokaler-goller-de">Github-Repository</a>
         </p>
         <p>
             Dennoch macht sie Gebrauch von 3rd Party Bibliotheken und bildet die folgenden
@@ -77,7 +77,7 @@
 
 </div>
 <style>
-    .about {
+    #about {
         background-color: var(--secondary-background-color);
         grid-row: 1000/1000;
         grid-column: 1/5;

@@ -12,7 +12,7 @@
     .column   {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
         width: 100%;
     }
 

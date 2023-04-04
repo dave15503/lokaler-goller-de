@@ -21,11 +21,13 @@
 
 	:root {
 
-		--title-font-size: 5vh;
+		--title-font-size: 4vh;
 		--headline-font-size: 3vh;
 		--subheadline-font-size: 2.5vh;
-		--minorheadline-font-size: 2vh;
+		--minorheadline-font-size: 2.2vh;
 
+		--text-font-size: 2vh;
+		--minor-font-size: 1.8vh;
 	}
 
 }

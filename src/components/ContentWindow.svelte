@@ -32,12 +32,12 @@
     .image :global(img) {
         max-width: 100%;
         height: 100%;
+        max-height: 600px;
     }
     
     .content {
-        padding: 5px;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         color: var(--text-color);
         transform: translateY(100%);
 
@@ -47,7 +47,7 @@
 
     .container:hover .content {
         transform: translate(0%);
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,0.5);
     }
     
    

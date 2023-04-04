@@ -54,9 +54,8 @@
 			</section>
 		</SectionContainer>
 
-		<!--ImageScroller row="2" imagesList={scroller0ImgList} /-->
 
-		<SectionContainer orientation="left" tag="host" imagePath="" row="3">
+		<SectionContainer orientation="left" tag="host" imagePath="/assets/rotlicht.jpg" row="3">
 			<div slot="section-headline">
 				<h1>Ihre Gastgeber</h1>
 			</div>
@@ -113,7 +112,7 @@
 			<div slot="section-content">
 				<ul>
 					<li>
-						Blubbermaschine mit 3 Anschlüssen
+						Blubbermaschine mit 4 Anschlüssen und 3 Schläuchen
 					</li>
 					<li>
 						Nitendeo Switch
@@ -142,7 +141,7 @@
 
 		<ColumnContainer row="6">
 			<ContentWindow>
-				<div slot="text">
+				<div slot="text" class="content-window-text">
 					<h3>Hightech PC</h3>
 					<p>
 						Mithilfe überlegener Technik aus der Zeit vorm Mauerfall
@@ -150,11 +149,11 @@
 					</p>
 				</div>
 				<div slot="image">
-					<img src="assets/hightech_pc.png" alt="Hightech PC bild"/>
+					<img src="assets/hightech_pc.jpg" alt="Hightech PC bild"/>
 				</div>
 			</ContentWindow>
 			<ContentWindow>
-				<div slot="text">
+				<div slot="text" class="content-window-text">
 					<h3>Andachtsstätte</h3>
 					<p>
 						Dank göttlichen Beistands werden hier nur Siegreiche
@@ -166,7 +165,7 @@
 				</div>
 			</ContentWindow>
 			<ContentWindow>
-				<div slot="text">
+				<div slot="text" class="content-window-text">
 					<h3>Urlaubsfeeling</h3>
 					<p>
 						Eintauchen in den tropisch-fruchtig-frischen Flair des
@@ -184,6 +183,11 @@
 </main>
 
 <style>
+
+	.content-window-text {
+		padding: 10px;
+	}
+
 	.content-grid {
 		display: grid;
 		justify-content: center;

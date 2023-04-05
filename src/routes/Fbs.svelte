@@ -2,6 +2,9 @@
     import MenuBar from "../components/MenuBar.svelte";
     import SectionContainer from "../components/SectionContainer.svelte";
     import SectionHeadline from "../components/SectionHeadline.svelte"
+    import About from "../components/About.svelte";
+    import ColumnContainer from "../components/ColumnContainer.svelte";
+    import LolPlayerviewer from "../components/LolPlayerviewer.svelte";
 
     let menuItems = [
         { id: 0, title: "Geschichte", link: "#history" },
@@ -43,12 +46,6 @@
                 durchlebte die Fenerbahçe Schnad eine turbulente Vereinsgeschichte,
                 von großen Siegen, Freudentränen und Niederlagen.
             </p>
-            <p>
-                kein plan man, das soll wer anders schreiben lol.
-            </p>
-            <p>
-                TODO: leute nach einwilligung fragen bevor die Bilder hier landen... also erstmal verpixelt
-            </p>
         </section>
     </SectionContainer>
 
@@ -65,9 +62,9 @@
     </SectionContainer>
 
     <SectionHeadline row="10" tag="esport" headline="Esport"></SectionHeadline>
-    <SectionContainer row="11" orientation="left">
+    <SectionContainer row="11" orientation="left" imagePath="/assets/fbs/Fenerbahce_Schnad_Esports.png">
         <h2 slot="section-headline">
-            Die Fenerbahçe hinter dem Monitor.
+            Die Fenerbahçe Schnad hinter dem Monitor.
         </h2>
         <section slot="section-content">
             <p>
@@ -81,7 +78,7 @@
             </p>
         </section>
     </SectionContainer>
-    <SectionContainer row="12" orientation="right">
+    <SectionContainer row="12" orientation="right" imagePath="/assets/fbs/lol_map.jpg" imageSubtitle="Bildquelle: Riot Games">
         <h2 slot="section-headline">
             League of Legends
         </h2>
@@ -102,6 +99,17 @@
         </section>
     </SectionContainer>
 
+    <SectionHeadline row="13" headline="LoL Kader" subheadline="2023"></SectionHeadline>
+    <ColumnContainer row="14">
+        <LolPlayerviewer name="Dijef" ingameName="dave15503" role="top"></LolPlayerviewer>
+        <LolPlayerviewer name="Hugel" ingameName="F2003H" role="jgl"></LolPlayerviewer>
+        <LolPlayerviewer name="Schorsch" ingameName="LegenderyFrp" role="mid"></LolPlayerviewer>
+        <LolPlayerviewer name="Felix" ingameName="Franz Sama" role="adc"></LolPlayerviewer>
+        <LolPlayerviewer name="Goller" ingameName="DerGoller" role="sup"></LolPlayerviewer>
+
+        <LolPlayerviewer name="Ernst" ingameName="ERNSΤ" role="Substitute"></LolPlayerviewer>
+        <LolPlayerviewer name="Stucki" ingameName="Stucki02" role="Coach"></LolPlayerviewer>
+    </ColumnContainer>
 
     <SectionHeadline row="20" tag="staff" headline="Die Vorstandschaft" subheadline="der FbS"></SectionHeadline>
     <SectionContainer row="21" orientation="right" minHeight="300" imagePath="../assets/fbs/Gico_Noller_2.jpg">
@@ -125,13 +133,7 @@
 </div>
 
 
-<div class="about">
-    Disclaimer: Scherz, kein Angemeldeter Verein
-    <br>
-    Anständiges Impressum folgt später, diese Website ist in der Entwicklungsphase
-    <br>
-    Warum ich auf dem production server entwickle? Weil ich kann.
-</div>
+<About></About>
 
 
 

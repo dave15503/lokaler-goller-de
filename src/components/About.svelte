@@ -18,13 +18,15 @@
             geschlossene Gesellschaft.
             Alle erwähnten Inhalte sind fiktiv und jeglicher Bezug
             zu realen Orten und Personen ist reiner Zufall.
-        </p>
-        <p>
-            Grüße gehen raus an den Steuerfahnder der das gerade liest.
+            Analog verhält es sich mit der Fenerbahçe Schnad. Der Verein existiert weder auf dem Papier,
+            noch ist er eingetragen.
+            Die Namensgebung beabsichtigt nicht, andere existierende Vereinsnamen zu
+            imitieren oder in anderer Weise zu schädigen, sondern ist lediglich ein Scherz.
         </p>
         <p>
             Kontakt für Feedback, Beschwerden und alle andere Anliegen: <a
             href="mailto: webmaster@lokaler-goller.de">webmaster@lokaler-goller.de</a>
+            Für Kontakte speziell mit dem Programmierer kann das GitHub-Repository zu Rate gezogen werden.
         </p>
     </section>
 
@@ -59,6 +61,9 @@
         </p>
         <p>
             GoogleMaps and the GoogleMaps logo design are trademarks of Google
+        </p>
+        <p>
+            Fenerbahce Schnaad or Lokaler Goller are not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc
         </p>
     </section>
 

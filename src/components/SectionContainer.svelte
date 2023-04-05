@@ -10,6 +10,7 @@
     export let tag; // id for the scrolling
     export let row;
     export let minHeight = -1;
+    export let imageSubtitle = "";
 
     let scrolledIntoContent = false;
 
@@ -36,7 +37,9 @@
 </script>
 
 <div class="{'image ' + orientationOpposite}" style={'grid-row: ' + row + '/' + row + '; background-image: url(' + imagePath + ") " + (imagePath !== "" ? ";" : (",  linear-gradient(green, violet);")) + (minHeight > 0 ? "height: " + minHeight + "px;" : "")}>
-    {imagePath == "" ? "**Placeholder**" : ""}
+    {#if imageSubtitle != ""}
+        <div class="image-subtitle">{imageSubtitle}</div>
+    {/if}
 </div>
 <div class="{'content ' + orientation}" id="{tag}" style="{'grid-row: ' + row + '/' + row + ';'}">
     {#key scrolledIntoContent}
@@ -61,11 +64,20 @@
 
     .image {
         display: inline-block;
+        position: relative;
         height: 100%;
         width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center, center;
+    }
+
+    .image-subtitle {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: var(--minor-font-size);
+        color: var(--secondary-text-color);
     }
 
     .left.image {
